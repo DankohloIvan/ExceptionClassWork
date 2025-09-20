@@ -81,6 +81,19 @@ int main() {
     stack.pop();
     stack.pop();
     stack.pop();
+    stack.pop();
+    stack.pop();
+    stack.pop();
+    stack.pop();
+    stack.pop();
+    stack.pop();
+    stack.pop();
+    try {
+        stack.pop();
+    }
+    catch (std::out_of_range ex) {
+        std::cout << "Index out of Range\n";
+    }
     stack.print();
 	return 0;
 }
